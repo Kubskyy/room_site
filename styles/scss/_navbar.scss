@@ -36,7 +36,7 @@
     display: flex;
 
     justify-content: space-between;
-    padding: 3rem 1.5rem;
+    padding: 3rem 1rem 3rem 1.5rem;
   }
 
   &__logo {
@@ -90,6 +90,7 @@
         display: inline-block;
         color: $black;
         font-weight: 600;
+        margin-left: 1rem;
       }
     }
   }
@@ -99,7 +100,7 @@
   z-index: 110;
   display: flex;
   justify-content: space-between;
-  margin-left: 4rem;
+  margin-left: 3rem;
   > a {
     color: $white;
     font-size: 0.9rem;
