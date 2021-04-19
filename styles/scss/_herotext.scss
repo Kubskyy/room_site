@@ -1,0 +1,60 @@
+.hero_text {
+  grid-row: 2/3;
+  grid-column: 1/2;
+
+  @include breakpoint-up(large) {
+    grid-column: 7/11;
+    grid-row: 1/3;
+  }
+  .container {
+    .dynamic-title {
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+
+      @include breakpoint-up(large) {
+        font-size: 2.5rem;
+        max-width: 15ch;
+      }
+    }
+    .dynamic-text {
+      color: $darkGray;
+      line-height: 1.8;
+      font-size: 0.75rem;
+      margin-bottom: 4rem;
+
+      @include breakpoint-up(large) {
+        margin-bottom: 2.5rem;
+        font-size: 0.9rem;
+        max-width: 45ch;
+      }
+    }
+    .shop {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      h2 {
+        font-weight: 500;
+        font-size: 0.9rem;
+        letter-spacing: 0.6rem;
+        text-transform: uppercase;
+
+        @include breakpoint-up(large) {
+          font-size: 1rem;
+        }
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    @include breakpoint-up(large) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: 3rem 5rem;
+    }
+  }
+}
